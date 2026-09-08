@@ -1025,7 +1025,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Resultados Web App Query",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1039,9 +1039,9 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Resultados Web App Query"
             ],
-            "id": "5ba6dda3-7b8e-4314-8585-b66c0630bf7e",
+            "id": "6a053323-0a3b-4f5c-a275-217ac9351a96",
             "source": {
               "cell": "8cb4c67f-250e-4690-bff5-8bc40b33e1da",
               "port": "d1284ff7-f276-41ff-904d-cf164307c37e"
@@ -1049,13 +1049,7 @@
             "target": {
               "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
               "port": "64a49ef6-c74d-4210-9d4d-b73d5036a0b3"
-            },
-            "vertices": [
-              {
-                "x": 290,
-                "y": 370
-              }
-            ]
+            }
           }
         ],
         "description": "Diagrama de flujo de datos del sitio web de la biblioteca universitaria, mostrando los usuarios, bibliotecarios, procesos, almacenamiento de datos y flujos de información entre los diferentes componentes del sistema."
