@@ -2144,7 +2144,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "d4dcd56d-a33f-4c49-a8ae-b60379450d2f"
+              ]
             },
             "labels": [
               "UsuarioAutenticado SQL Query"
@@ -2196,7 +2198,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "d4dcd56d-a33f-4c49-a8ae-b60379450d2f"
+              ]
             },
             "labels": [
               "UsuarioAutenticado SQL Query Resultado"
@@ -2265,6 +2269,39 @@
             "target": {
               "cell": "9d871fbc-9894-488c-b3fc-49ab384917bc",
               "port": "2eeba5f4-2a2c-4216-aeeb-ad2e4cd90e55"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 11,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "63d4dba3-eac3-4cc0-99cf-0758a3fa9143",
+                "eab541d3-c074-4218-a921-6f9a139e6c36"
+              ],
+              "containedElements": [
+                "2f7e1372-b2c7-4bab-ad9a-487f9bd7af4a"
+              ]
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "d4dcd56d-a33f-4c49-a8ae-b60379450d2f",
+            "source": {
+              "x": 930,
+              "y": 530
+            },
+            "target": {
+              "x": 1180,
+              "y": 380
             }
           }
         ],
