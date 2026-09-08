@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "59c35491-d8a5-4aca-9faf-b882a9e03519",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "47575a21-a614-48b1-8331-466ebb26edd7",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
@@ -274,6 +274,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -357,7 +358,6 @@
               ]
             },
             "id": "10c6645b-084b-49be-a3ca-f867cada9a6a",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Sitio web biblioteca",
@@ -397,6 +397,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -480,7 +481,6 @@
               ]
             },
             "id": "8cb4c67f-250e-4690-bff5-8bc40b33e1da",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -521,6 +521,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -604,7 +605,6 @@
               ]
             },
             "id": "c6bc694b-ee2f-43ee-9acc-37f50f351b44",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Páginas web en disco",
@@ -645,6 +645,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -728,7 +729,6 @@
               ]
             },
             "id": "7a146e00-9b79-4bff-a6be-8f809f0ff0b9",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "Web Application Config",
@@ -743,52 +743,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Web Request"
-            ],
-            "id": "aad57e7a-fd25-47a7-8482-e2781f5f24ba",
-            "source": {
-              "x": 110,
-              "y": 100
-            },
-            "target": {
-              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
-              "port": "a4bc2eb8-24b0-46fa-b694-9093bbf25e31"
             }
           },
           {
@@ -829,13 +783,71 @@
             ],
             "id": "9f5d6bb4-d802-4e9f-812d-80008f8e3f89",
             "source": {
-              "x": 370,
-              "y": -70
+              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
+              "port": "4b7ae947-496a-47c8-aacc-fbb21ee2198c"
             },
             "target": {
               "cell": "59c35491-d8a5-4aca-9faf-b882a9e03519",
               "port": "e4f493b1-515f-4583-981b-434bbb0b4f88"
-            }
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": -40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Web Request"
+            ],
+            "id": "aad57e7a-fd25-47a7-8482-e2781f5f24ba",
+            "source": {
+              "cell": "59c35491-d8a5-4aca-9faf-b882a9e03519",
+              "port": "748e9f31-f8e7-441e-bba4-d2673ce1cfd5"
+            },
+            "target": {
+              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
+              "port": "a4bc2eb8-24b0-46fa-b694-9093bbf25e31"
+            },
+            "vertices": [
+              {
+                "x": 129.75,
+                "y": 120
+              }
+            ]
           }
         ],
         "description": "Diagrama de flujo de datos del sitio web de la biblioteca universitaria, mostrando los usuarios, bibliotecarios, procesos, almacenamiento de datos y flujos de información entre los diferentes componentes del sistema."
