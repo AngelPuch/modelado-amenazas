@@ -2162,8 +2162,8 @@
             },
             "vertices": [
               {
-                "x": 785,
-                "y": 380
+                "x": 730,
+                "y": 410
               }
             ]
           },
@@ -2279,7 +2279,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Limite\nWeb server/db",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -2292,17 +2292,31 @@
               ]
             },
             "labels": [
-              "Trust Boundary"
+              "Limite\nWeb server/db"
             ],
             "id": "d4dcd56d-a33f-4c49-a8ae-b60379450d2f",
             "source": {
-              "x": 930,
-              "y": 530
+              "x": 1010,
+              "y": 540
             },
             "target": {
-              "x": 1180,
-              "y": 380
-            }
+              "x": 1170,
+              "y": 410
+            },
+            "vertices": [
+              {
+                "x": 930,
+                "y": 450
+              },
+              {
+                "x": 1050,
+                "y": 380
+              },
+              {
+                "x": 1150,
+                "y": 410
+              }
+            ]
           }
         ],
         "description": "Diagrama de flujo de datos de inicio de sesión del usuario para el sitio web de la biblioteca universitaria"
