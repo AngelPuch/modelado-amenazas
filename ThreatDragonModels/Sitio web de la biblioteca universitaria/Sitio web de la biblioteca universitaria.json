@@ -1539,8 +1539,8 @@
           },
           {
             "position": {
-              "x": 710,
-              "y": 130
+              "x": 740,
+              "y": 190
             },
             "size": {
               "width": 90,
@@ -1659,8 +1659,8 @@
           },
           {
             "position": {
-              "x": 370,
-              "y": 330
+              "x": 290,
+              "y": 380
             },
             "size": {
               "width": 120,
@@ -1783,8 +1783,8 @@
           },
           {
             "position": {
-              "x": 710,
-              "y": 330
+              "x": 900,
+              "y": 350
             },
             "size": {
               "width": 120,
@@ -2006,6 +2006,110 @@
               {
                 "x": 450,
                 "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "UsuarioAutenticado()",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "UsuarioAutenticado()"
+            ],
+            "id": "fdce2654-fa97-4c61-8f0a-1f631271084b",
+            "source": {
+              "cell": "9d871fbc-9894-488c-b3fc-49ab384917bc",
+              "port": "9e6f6402-d8f0-4c91-8676-348edd640f3d"
+            },
+            "target": {
+              "cell": "1eac7593-be37-4cff-8440-5e6ccae13075",
+              "port": "1f363860-95a9-4e88-a192-33507539709f"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "UsuarioAutenticado Resultado",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "UsuarioAutenticado Resultado"
+            ],
+            "id": "11a721e3-c3de-4476-9cbf-b6aabc50a798",
+            "source": {
+              "cell": "1eac7593-be37-4cff-8440-5e6ccae13075",
+              "port": "1f363860-95a9-4e88-a192-33507539709f"
+            },
+            "target": {
+              "cell": "9d871fbc-9894-488c-b3fc-49ab384917bc",
+              "port": "9e6f6402-d8f0-4c91-8676-348edd640f3d"
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 160
               }
             ]
           }
