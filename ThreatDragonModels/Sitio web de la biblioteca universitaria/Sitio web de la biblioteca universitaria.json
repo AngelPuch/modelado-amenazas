@@ -848,6 +848,110 @@
                 "y": 120
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Web Request"
+            ],
+            "id": "84009ac4-4760-4a76-a1dc-d5bf4815c021",
+            "source": {
+              "cell": "47575a21-a614-48b1-8331-466ebb26edd7",
+              "port": "748e9f31-f8e7-441e-bba4-d2673ce1cfd5"
+            },
+            "target": {
+              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
+              "port": "cb1b28d4-f6e0-4baf-8131-ad2e1e3d42e4"
+            },
+            "vertices": [
+              {
+                "x": 644,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Web Response"
+            ],
+            "id": "a967e025-c32a-4129-824b-609ac6b5a1e5",
+            "source": {
+              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
+              "port": "4b7ae947-496a-47c8-aacc-fbb21ee2198c"
+            },
+            "target": {
+              "cell": "47575a21-a614-48b1-8331-466ebb26edd7",
+              "port": "892478f3-15b1-4ad7-a469-785dfd841362"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": -50
+              }
+            ]
           }
         ],
         "description": "Diagrama de flujo de datos del sitio web de la biblioteca universitaria, mostrando los usuarios, bibliotecarios, procesos, almacenamiento de datos y flujos de información entre los diferentes componentes del sistema."
