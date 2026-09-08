@@ -1783,8 +1783,8 @@
           },
           {
             "position": {
-              "x": 900,
-              "y": 350
+              "x": 1010,
+              "y": 420
             },
             "size": {
               "width": 120,
@@ -2112,6 +2112,160 @@
                 "y": 160
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "UsuarioAutenticado SQL Query",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "UsuarioAutenticado SQL Query"
+            ],
+            "id": "63d4dba3-eac3-4cc0-99cf-0758a3fa9143",
+            "source": {
+              "cell": "1eac7593-be37-4cff-8440-5e6ccae13075",
+              "port": "2eeba5f4-2a2c-4216-aeeb-ad2e4cd90e55"
+            },
+            "target": {
+              "cell": "2f7e1372-b2c7-4bab-ad9a-487f9bd7af4a",
+              "port": "536f4f9c-1ace-4c60-b0c3-e601a1b38a8b"
+            },
+            "vertices": [
+              {
+                "x": 785,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "UsuarioAutenticado SQL Query Resultado",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "UsuarioAutenticado SQL Query Resultado"
+            ],
+            "id": "eab541d3-c074-4218-a921-6f9a139e6c36",
+            "source": {
+              "cell": "2f7e1372-b2c7-4bab-ad9a-487f9bd7af4a",
+              "port": "4caecd26-6e4f-4d4b-976f-695a283f7d5f"
+            },
+            "target": {
+              "cell": "1eac7593-be37-4cff-8440-5e6ccae13075",
+              "port": "9e6f6402-d8f0-4c91-8676-348edd640f3d"
+            },
+            "vertices": [
+              {
+                "x": 1000,
+                "y": 250
+              },
+              {
+                "x": 870,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Vistas",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Vistas"
+            ],
+            "id": "150e4270-4586-4395-ae57-d7a17f8a1c98",
+            "source": {
+              "cell": "2af490ab-f6ab-498e-a86a-8b94e9439fd2",
+              "port": "4caecd26-6e4f-4d4b-976f-695a283f7d5f"
+            },
+            "target": {
+              "cell": "9d871fbc-9894-488c-b3fc-49ab384917bc",
+              "port": "2eeba5f4-2a2c-4216-aeeb-ad2e4cd90e55"
+            }
           }
         ],
         "description": "Diagrama de flujo de datos de inicio de sesión del usuario para el sitio web de la biblioteca universitaria"
