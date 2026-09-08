@@ -787,176 +787,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "451860b9-a3cc-41ad-9cff-0d398896aa05"
-              ]
-            },
-            "labels": [
-              "Web Response"
-            ],
-            "id": "9f5d6bb4-d802-4e9f-812d-80008f8e3f89",
-            "source": {
-              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
-              "port": "4b7ae947-496a-47c8-aacc-fbb21ee2198c"
-            },
-            "target": {
-              "cell": "59c35491-d8a5-4aca-9faf-b882a9e03519",
-              "port": "e4f493b1-515f-4583-981b-434bbb0b4f88"
-            },
-            "vertices": [
-              {
-                "x": 250,
-                "y": 60
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "451860b9-a3cc-41ad-9cff-0d398896aa05"
-              ]
-            },
-            "labels": [
-              "Web Request"
-            ],
-            "id": "84009ac4-4760-4a76-a1dc-d5bf4815c021",
-            "source": {
-              "cell": "47575a21-a614-48b1-8331-466ebb26edd7",
-              "port": "748e9f31-f8e7-441e-bba4-d2673ce1cfd5"
-            },
-            "target": {
-              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
-              "port": "cb1b28d4-f6e0-4baf-8131-ad2e1e3d42e4"
-            },
-            "vertices": [
-              {
-                "x": 670,
-                "y": 40
-              },
-              {
-                "x": 644,
-                "y": 110
-              },
-              {
-                "x": 510,
-                "y": 150
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "451860b9-a3cc-41ad-9cff-0d398896aa05"
-              ]
-            },
-            "labels": [
-              "Web Response"
-            ],
-            "id": "a967e025-c32a-4129-824b-609ac6b5a1e5",
-            "source": {
-              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
-              "port": "4b7ae947-496a-47c8-aacc-fbb21ee2198c"
-            },
-            "target": {
-              "cell": "47575a21-a614-48b1-8331-466ebb26edd7",
-              "port": "892478f3-15b1-4ad7-a469-785dfd841362"
-            },
-            "vertices": [
-              {
-                "x": 530,
-                "y": 50
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Queries",
               "description": "",
               "outOfScope": false,
@@ -1046,6 +876,10 @@
               {
                 "x": 300,
                 "y": 330
+              },
+              {
+                "x": 330,
+                "y": 250
               }
             ]
           },
@@ -1222,6 +1056,236 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "cbdbadac-6aec-4ef7-a82b-3455ce796970",
+                  "title": "Man-in-themiddle",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas solicitudes se transmiten a través de la Internet pública y podrían ser interceptadas por un atacante.\n",
+                  "mitigation": "Las solicitudes deberían requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "451860b9-a3cc-41ad-9cff-0d398896aa05"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Request"
+            ],
+            "id": "84009ac4-4760-4a76-a1dc-d5bf4815c021",
+            "source": {
+              "cell": "47575a21-a614-48b1-8331-466ebb26edd7",
+              "port": "748e9f31-f8e7-441e-bba4-d2673ce1cfd5"
+            },
+            "target": {
+              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
+              "port": "cb1b28d4-f6e0-4baf-8131-ad2e1e3d42e4"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 40
+              },
+              {
+                "x": 644,
+                "y": 110
+              },
+              {
+                "x": 510,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "076ca94d-51db-4dd6-833f-bb3194a04212",
+                  "title": "Man-in-themiddle",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas solicitudes se transmiten a través de la Internet pública y podrían ser interceptadas por un atacante",
+                  "mitigation": "Las solicitudes deberían requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "451860b9-a3cc-41ad-9cff-0d398896aa05"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Response"
+            ],
+            "id": "9f5d6bb4-d802-4e9f-812d-80008f8e3f89",
+            "source": {
+              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
+              "port": "4b7ae947-496a-47c8-aacc-fbb21ee2198c"
+            },
+            "target": {
+              "cell": "59c35491-d8a5-4aca-9faf-b882a9e03519",
+              "port": "e4f493b1-515f-4583-981b-434bbb0b4f88"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 60
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "2763770b-e03d-414d-b2ed-a1e44249e869",
+                  "title": "Man-in-themiddle",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas solicitudes se transmiten a través de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las solicitudes deberían requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "451860b9-a3cc-41ad-9cff-0d398896aa05"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Response"
+            ],
+            "id": "a967e025-c32a-4129-824b-609ac6b5a1e5",
+            "source": {
+              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
+              "port": "4b7ae947-496a-47c8-aacc-fbb21ee2198c"
+            },
+            "target": {
+              "cell": "47575a21-a614-48b1-8331-466ebb26edd7",
+              "port": "892478f3-15b1-4ad7-a469-785dfd841362"
+            },
+            "vertices": [
+              {
+                "x": 530,
+                "y": 50
+              }
+            ]
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1234,10 +1298,10 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "9f5d6bb4-d802-4e9f-812d-80008f8e3f89",
+                "aad57e7a-fd25-47a7-8482-e2781f5f24ba",
                 "84009ac4-4760-4a76-a1dc-d5bf4815c021",
-                "a967e025-c32a-4129-824b-609ac6b5a1e5",
-                "aad57e7a-fd25-47a7-8482-e2781f5f24ba"
+                "9f5d6bb4-d802-4e9f-812d-80008f8e3f89",
+                "a967e025-c32a-4129-824b-609ac6b5a1e5"
               ],
               "containedElements": [
                 "59c35491-d8a5-4aca-9faf-b882a9e03519",
@@ -2374,6 +2438,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Guillermo Humberto Vera Amaro",
-    "threatTop": 5
+    "threatTop": 8
   }
 }
