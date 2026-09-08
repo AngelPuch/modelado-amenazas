@@ -267,8 +267,8 @@
                 "text": "Sitio web biblioteca"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -365,12 +365,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2f5bad30-9d5b-41e6-854d-a649179f6dc0",
+                  "title": "Denegación de servicio",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Un atacante podría denegar el acceso a usuarios válidos, haciendo que el servidor web no esté disponible o sea inutilizable temporalmente por medio del envío de múltiples peticiones simultaneas.",
+                  "mitigation": "Se utiliza un balanceo de cargas en el servidor web. Se monitorean las direcciones IP de los clientes y al encontrar un posible ataque, se bloquea el acceso. Se considera contratar un servicio de VPN para  cultar la dirección IP pública a los clientes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 4,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -837,60 +859,6 @@
             "labels": [
               "Web Request"
             ],
-            "id": "aad57e7a-fd25-47a7-8482-e2781f5f24ba",
-            "source": {
-              "cell": "59c35491-d8a5-4aca-9faf-b882a9e03519",
-              "port": "748e9f31-f8e7-441e-bba4-d2673ce1cfd5"
-            },
-            "target": {
-              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
-              "port": "a4bc2eb8-24b0-46fa-b694-9093bbf25e31"
-            },
-            "vertices": [
-              {
-                "x": 129.75,
-                "y": 120
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "451860b9-a3cc-41ad-9cff-0d398896aa05"
-              ]
-            },
-            "labels": [
-              "Web Request"
-            ],
             "id": "84009ac4-4760-4a76-a1dc-d5bf4815c021",
             "source": {
               "cell": "47575a21-a614-48b1-8331-466ebb26edd7",
@@ -902,8 +870,16 @@
             },
             "vertices": [
               {
+                "x": 670,
+                "y": 40
+              },
+              {
                 "x": 644,
                 "y": 110
+              },
+              {
+                "x": 510,
+                "y": 150
               }
             ]
           },
@@ -1172,6 +1148,80 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "512c87fc-2307-4b20-98ec-16097354ab67",
+                  "title": "Man-in-themiddle",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas solicitudes se transmiten a través de la Internet pública y podrían ser interceptadas por un atacante.\n",
+                  "mitigation": "Las solicitudes deberían requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "451860b9-a3cc-41ad-9cff-0d398896aa05"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Request"
+            ],
+            "id": "aad57e7a-fd25-47a7-8482-e2781f5f24ba",
+            "source": {
+              "cell": "59c35491-d8a5-4aca-9faf-b882a9e03519",
+              "port": "748e9f31-f8e7-441e-bba4-d2673ce1cfd5"
+            },
+            "target": {
+              "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
+              "port": "a4bc2eb8-24b0-46fa-b694-9093bbf25e31"
+            },
+            "vertices": [
+              {
+                "x": 129.75,
+                "y": 120
+              }
+            ]
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1185,9 +1235,9 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "9f5d6bb4-d802-4e9f-812d-80008f8e3f89",
-                "aad57e7a-fd25-47a7-8482-e2781f5f24ba",
                 "84009ac4-4760-4a76-a1dc-d5bf4815c021",
-                "a967e025-c32a-4129-824b-609ac6b5a1e5"
+                "a967e025-c32a-4129-824b-609ac6b5a1e5",
+                "aad57e7a-fd25-47a7-8482-e2781f5f24ba"
               ],
               "containedElements": [
                 "59c35491-d8a5-4aca-9faf-b882a9e03519",
@@ -2324,6 +2374,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Guillermo Humberto Vera Amaro",
-    "threatTop": 0
+    "threatTop": 5
   }
 }
