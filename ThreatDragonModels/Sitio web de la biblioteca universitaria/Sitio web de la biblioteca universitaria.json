@@ -1212,6 +1212,40 @@
                 "y": -20
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Limite Web server/db\n",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Limite Web server/db\n"
+            ],
+            "id": "8ca02aa9-ffe3-4510-9b0a-9d18fc565c66",
+            "source": {
+              "x": 30,
+              "y": 410
+            },
+            "target": {
+              "x": 300,
+              "y": 420
+            },
+            "vertices": [
+              {
+                "x": 170,
+                "y": 340
+              }
+            ]
           }
         ],
         "description": "Diagrama de flujo de datos del sitio web de la biblioteca universitaria, mostrando los usuarios, bibliotecarios, procesos, almacenamiento de datos y flujos de información entre los diferentes componentes del sistema."
