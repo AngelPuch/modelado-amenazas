@@ -375,7 +375,7 @@
           },
           {
             "position": {
-              "x": 90,
+              "x": 73.75,
               "y": 380
             },
             "size": {
@@ -1008,8 +1008,12 @@
             },
             "vertices": [
               {
-                "x": 190,
-                "y": 230
+                "x": 210,
+                "y": 200
+              },
+              {
+                "x": 110,
+                "y": 270
               }
             ]
           },
@@ -1060,12 +1064,12 @@
             },
             "vertices": [
               {
-                "x": 210,
-                "y": 340
+                "x": 260,
+                "y": 370
               },
               {
-                "x": 250,
-                "y": 300
+                "x": 300,
+                "y": 330
               }
             ]
           },
@@ -1221,7 +1225,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Limite Web server/db\n",
+              "name": "Limite Web \nserver/db\n",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1229,7 +1233,7 @@
               "containedElements": []
             },
             "labels": [
-              "Limite Web server/db\n"
+              "Limite Web \nserver/db\n"
             ],
             "id": "8ca02aa9-ffe3-4510-9b0a-9d18fc565c66",
             "source": {
@@ -1244,6 +1248,10 @@
               {
                 "x": 170,
                 "y": 340
+              },
+              {
+                "x": 260,
+                "y": 390
               }
             ]
           }
