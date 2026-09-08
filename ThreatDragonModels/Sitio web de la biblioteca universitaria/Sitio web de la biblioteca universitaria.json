@@ -776,7 +776,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "451860b9-a3cc-41ad-9cff-0d398896aa05"
+              ]
             },
             "labels": [
               "Web Response"
@@ -828,7 +830,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "451860b9-a3cc-41ad-9cff-0d398896aa05"
+              ]
             },
             "labels": [
               "Web Request"
@@ -880,7 +884,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "451860b9-a3cc-41ad-9cff-0d398896aa05"
+              ]
             },
             "labels": [
               "Web Request"
@@ -932,7 +938,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "451860b9-a3cc-41ad-9cff-0d398896aa05"
+              ]
             },
             "labels": [
               "Web Response"
@@ -1158,6 +1166,52 @@
               "cell": "10c6645b-084b-49be-a3ca-f867cada9a6a",
               "port": "64a49ef6-c74d-4210-9d4d-b73d5036a0b3"
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 11,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Usuario/Web \nserver limite\n",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "9f5d6bb4-d802-4e9f-812d-80008f8e3f89",
+                "aad57e7a-fd25-47a7-8482-e2781f5f24ba",
+                "84009ac4-4760-4a76-a1dc-d5bf4815c021",
+                "a967e025-c32a-4129-824b-609ac6b5a1e5"
+              ],
+              "containedElements": [
+                "59c35491-d8a5-4aca-9faf-b882a9e03519",
+                "47575a21-a614-48b1-8331-466ebb26edd7"
+              ]
+            },
+            "labels": [
+              "Usuario/Web \nserver limite\n"
+            ],
+            "id": "451860b9-a3cc-41ad-9cff-0d398896aa05",
+            "source": {
+              "x": 10,
+              "y": -120
+            },
+            "target": {
+              "x": 860,
+              "y": -140
+            },
+            "vertices": [
+              {
+                "x": 100,
+                "y": 40
+              },
+              {
+                "x": 370,
+                "y": 40
+              }
+            ]
           }
         ],
         "description": "Diagrama de flujo de datos del sitio web de la biblioteca universitaria, mostrando los usuarios, bibliotecarios, procesos, almacenamiento de datos y flujos de información entre los diferentes componentes del sistema."
